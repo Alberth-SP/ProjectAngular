@@ -1,0 +1,9 @@
+
+<ul>
+    <li *ngFor="let per of people" style="margin-top: 5px;">
+        {{ per.name }} : {{ per.country}} : {{ per.id }}
+        <button  (click)="editItem(per.id)"> Editar</button> 
+        <button  (click)="deleteItem(per.id)"> Eliminar</button>
+    </li>
+</ul>
+

@@ -1,0 +1,12 @@
+
+<div>
+    <h1> Agrear Persona</h1>
+    <form>
+        <h1 > {{ dataService.idUser }}</h1>
+        <label> Nombre</label>
+        <input type="text" [(ngModel)] ="dataService.name" name="first"/>
+        <label> Pais</label>
+        <input type="text" [(ngModel)]="dataService.country" name="second"/>
+        <button (click)="sendData()"> Agregar</button>
+    </form>
+</div>
